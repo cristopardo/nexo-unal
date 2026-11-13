@@ -119,7 +119,7 @@ $("metrics-form").addEventListener("submit", async (event) => {
     const data = await response.json();
     $("total").textContent = number.format(data.total_messages);
     $("grounded").textContent = (data.total_messages ? Math.round(data.grounded_messages / data.total_messages * 100) : 0) + "%";
-    $("grounded-count").textContent = number.format(data.grounded_messages) + " consultas con referencias";
+    $("grounded-count").textContent = number.format(data.grounded_messages) + (data.grounded_messages === 1 ? " consulta con referencias" : " consultas con referencias");
     $("latency").textContent = number.format(Math.round(data.avg_latency_ms)) + " ms";
     $("fallback").textContent = number.format(data.fallback_messages);
     distribution($("categories"), data.by_category, data.total_messages);
@@ -135,7 +135,7 @@ $("metrics-form").addEventListener("submit", async (event) => {
       $("daily").append(row);
     });
     $("metrics-content").hidden = false;
-    $("metrics-status").textContent = "Actualizado a las " + new Date().toLocaleTimeString("es-CO", {hour:"2-digit",minute:"2-digit"}) + ". Retención: " + data.retention_days + " días. Las consultas de prueba también se contabilizan.";
+    $("metrics-status").textContent = "Actualizado a las " + new Date().toLocaleTimeString("es-CO", {hour:"2-digit",minute:"2-digit",hour12:false}) + ". Retención: " + data.retention_days + " días. Las consultas de prueba también se contabilizan.";
   } catch (error) {
     $("metrics-status").textContent = error.name === "TimeoutError" ? "La consulta tardó demasiado. Intenta de nuevo." : error.message;
   } finally {
