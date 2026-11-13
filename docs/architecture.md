@@ -43,4 +43,4 @@ La limitación de consultas web se mantiene por proceso y dirección de conexió
 
 La ampliación a toda la U requiere filtros de sede y programa, catálogo versionado, responsables editoriales y un conjunto de preguntas de evaluación que incluya dudas ambiguas, fuera de alcance y fuentes contradictorias. También se prevén seguimiento de satisfacción voluntario, alertas de errores y evaluación periódica de respuestas con fuentes.
 
-Para operar, revisar `/healthz`, las métricas y los fallos de entrega sin registrar cuerpos. Rotar secretos mediante nuevas versiones y actualizar las referencias Terraform. El despliegue público se realiza con una imagen inmutable cuyo digest queda asociado al commit real de Git.
+Para operar, revisar `/health`, las métricas y los fallos de entrega sin registrar cuerpos. Rotar secretos mediante nuevas versiones y actualizar las referencias Terraform. El despliegue público se realiza con una imagen inmutable cuyo digest queda asociado al commit real de Git.

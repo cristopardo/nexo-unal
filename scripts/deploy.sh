@@ -35,6 +35,6 @@ printf 'container_image = "%s"\n' "$IMAGE_REF" > "$ROOT_DIR/infra/deployment.aut
 terraform -chdir=infra plan -var-file="$TFVARS" -var="container_image=$IMAGE_REF" -out=deploy.tfplan
 terraform -chdir=infra apply deploy.tfplan
 SERVICE_URL="$(terraform -chdir=infra output -raw service_url)"
-curl --fail --silent --show-error "$SERVICE_URL/healthz"
+curl --fail --silent --show-error "$SERVICE_URL/health"
 printf '\nDeployment URL: %s\nImage: %s\n' "$SERVICE_URL" "$IMAGE_REF"
 printf 'Image recorded in ignored infra/deployment.auto.tfvars.\n'

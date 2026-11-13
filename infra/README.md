@@ -86,7 +86,7 @@ El ID de proyecto debe estar disponible globalmente. Si `nexo-unal-2026` ya est�
    ./scripts/deploy.sh
    ```
 
-   El script usa el proyecto del estado Terraform, construye con una cuenta de servicio propia, resuelve el digest, guarda su referencia en el archivo local ignorado `infra/deployment.auto.tfvars`, muestra el plan y aplica ese plan. Al terminar verifica `/healthz` y muestra la URL. Si se usa un archivo de variables alternativo, pasar su ruta **absoluta** como primer argumento a ambos scripts. La imagen no se cambia mediante `gcloud run deploy`; la configuración del servicio permanece en Terraform.
+   El script usa el proyecto del estado Terraform, construye con una cuenta de servicio propia, resuelve el digest, guarda su referencia en el archivo local ignorado `infra/deployment.auto.tfvars`, muestra el plan y aplica ese plan. Al terminar verifica `/health` y muestra la URL. Si se usa un archivo de variables alternativo, pasar su ruta **absoluta** como primer argumento a ambos scripts. La imagen no se cambia mediante `gcloud run deploy`; la configuración del servicio permanece en Terraform.
 
 No se debe pasar una credencial mediante `-var` ni crear `google_secret_manager_secret_version`: el valor acabaría en el estado. Los planes y el estado también contienen metadatos del proyecto y deben almacenarse de forma privada. Para trabajo en equipo, migrar el estado a un bucket GCS privado con versionado y acceso mínimo antes de compartirlo; el backend local es suficiente para el primer despliegue individual.
 
@@ -107,6 +107,8 @@ Configurar `enable_whatsapp = true`, `whatsapp_phone_number_id`, la versión de 
 Configurar `enable_vertex_ai = true` y un `gemini_model` disponible en el proyecto; volver a desplegar. La app usa ADC de la cuenta de ejecución y el endpoint global (`VERTEX_LOCATION=global`), sin API key. El acceso a una licencia de Google AI Pro para uso personal y el consumo de Vertex AI son productos diferentes: la licencia no sustituye la facturación ni los permisos de la API.
 
 El valor inicial es `gemini-3.5-flash-lite`, modelo GA con endpoint global según la [documentación del modelo](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/3-5-flash-lite), revisada el 13 de noviembre de 2026. Comprobar su [ciclo de vida](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/model-versions) antes de activarlo o migrarlo.
+
+La ruta pública de salud es `/health`: Cloud Run [reserva algunas rutas terminadas en `z`](https://docs.cloud.google.com/run/docs/known-issues#reserved_url_paths), por lo que no debe usarse `/healthz` para comprobaciones externas.
 
 ## Operación
 

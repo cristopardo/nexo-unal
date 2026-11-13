@@ -188,13 +188,13 @@ resource "google_cloud_run_v2_service" "application" {
         timeout_seconds       = 3
         period_seconds        = 5
         failure_threshold     = 20
-        http_get { path = "/healthz" }
+        http_get { path = "/health" }
       }
       liveness_probe {
         timeout_seconds   = 3
         period_seconds    = 30
         failure_threshold = 3
-        http_get { path = "/healthz" }
+        http_get { path = "/health" }
       }
     }
   }

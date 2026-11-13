@@ -83,7 +83,8 @@ def create_app(settings: Settings | None = None, store=None) -> FastAPI:
         )
         return result, (time.monotonic() - start) * 1000
 
-    @app.get("/healthz")
+    @app.get("/health")
+    @app.get("/healthz", include_in_schema=False)
     def health():
         return {"status": "ok", "service": "nexo-unal"}
 

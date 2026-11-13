@@ -299,3 +299,11 @@ def test_dashboard_suggestions_have_relevant_sources(setup, question, source_id)
     expected_url = next(source.url for source in expected if source.id == source_id)
     assert data["grounded"] is True
     assert data["sources"][0]["url"] == expected_url
+
+
+def test_cloud_run_compatible_health_route_and_legacy_alias(setup):
+    _, _, client = setup
+    for path in ("/health", "/healthz"):
+        response = client.get(path)
+        assert response.status_code == 200
+        assert response.json() == {"status": "ok", "service": "nexo-unal"}
