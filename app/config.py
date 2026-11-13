@@ -16,7 +16,7 @@ class Settings:
     google_cloud_project: str = ""
     firestore_database: str = "(default)"
     vertex_location: str = "global"
-    vertex_model: str = "gemini-2.5-flash"
+    vertex_model: str = "gemini-3.5-flash-lite"
     enable_vertex_ai: bool = False
     knowledge_path: str = "knowledge/sources.json"
     web_path: str = "web"

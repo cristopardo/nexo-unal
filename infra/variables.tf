@@ -56,7 +56,7 @@ variable "enable_vertex_ai" {
 variable "gemini_model" {
   description = "Vertex AI model ID available to the project in the selected region."
   type        = string
-  default     = "gemini-2.5-flash"
+  default     = "gemini-3.5-flash-lite"
 }
 
 variable "enable_whatsapp" {

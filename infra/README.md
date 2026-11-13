@@ -106,6 +106,8 @@ Configurar `enable_whatsapp = true`, `whatsapp_phone_number_id`, la versión de 
 
 Configurar `enable_vertex_ai = true` y un `gemini_model` disponible en el proyecto; volver a desplegar. La app usa ADC de la cuenta de ejecución y el endpoint global (`VERTEX_LOCATION=global`), sin API key. El acceso a una licencia de Google AI Pro para uso personal y el consumo de Vertex AI son productos diferentes: la licencia no sustituye la facturación ni los permisos de la API.
 
+El valor inicial es `gemini-3.5-flash-lite`, modelo GA con endpoint global según la [documentación del modelo](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/3-5-flash-lite), revisada el 13 de noviembre de 2026. Comprobar su [ciclo de vida](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/model-versions) antes de activarlo o migrarlo.
+
 ## Operación
 
 ```bash

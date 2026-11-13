@@ -6,6 +6,6 @@ firestore_location = "us-central1"
 # container_image = "us-central1-docker.pkg.dev/your-dedicated-project/nexo-unal/app@sha256:..."
 # admin_secret_version = "1"
 # enable_vertex_ai = true
-# gemini_model = "gemini-2.5-flash"
+# gemini_model = "gemini-3.5-flash-lite"
 # enable_whatsapp = true
 # whatsapp_phone_number_id = "YOUR_META_PHONE_NUMBER_ID"

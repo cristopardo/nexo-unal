@@ -53,7 +53,7 @@ async def generate(settings, question, sources):
                 ],
             }
         ],
-        "generationConfig": {"temperature": 0.1, "maxOutputTokens": 450},
+        "generationConfig": {"maxOutputTokens": 450},
     }
     async with httpx.AsyncClient(timeout=20) as client:
         response = await client.post(
@@ -61,7 +61,7 @@ async def generate(settings, question, sources):
         )
         response.raise_for_status()
     parts = response.json().get("candidates", [{}])[0].get("content", {}).get("parts", [])
-    answer = "".join(part.get("text", "") for part in parts).strip()
+    answer = "".join(part.get("text", "") for part in parts if not part.get("thought")).strip()
     if not answer:
         raise ValueError("Empty model response")
     return answer[:3500]
