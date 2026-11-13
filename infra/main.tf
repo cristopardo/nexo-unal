@@ -229,5 +229,7 @@ resource "google_firestore_field" "expiry" {
   database   = google_firestore_database.application.name
   collection = each.key
   field      = "expires_at"
+  # TTL activation is asynchronous and does not block serving the application.
+  skip_wait = true
   ttl_config {}
 }

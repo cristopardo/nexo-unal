@@ -5,7 +5,7 @@ Este código prepara un despliegue reproducible; su presencia en GitHub **no sig
 ## Recursos
 
 - Cloud Run: una imagen por digest, HTTPS, escala de 0 a 2 instancias (máximo configurable), 1 CPU / 512 MiB, timeout de solicitud de 300 segundos.
-- Firestore nativo: métricas agregables y registro de deduplicación; TTL en `expires_at` para las colecciones `metrics` y `deliveries`. La eliminación por TTL es asíncrona.
+- Firestore nativo: métricas agregables y registro de deduplicación; TTL en `expires_at` para las colecciones `metrics` y `deliveries`. La activación y eliminación por TTL son asíncronas; `skip_wait = true` permite desplegar mientras se activan las políticas.
 - Artifact Registry y Cloud Build, con cuenta de servicio propia para construir.
 - Secret Manager: contenedores para credenciales. Los valores se cargan por entrada estándar; Terraform nunca los recibe.
 - Cuenta de ejecución con acceso a Firestore, a los secretos utilizados y, opcionalmente, Vertex AI. Sin claves JSON de cuentas de servicio.
