@@ -21,9 +21,9 @@ Iniciativa estudiantil independiente. Las respuestas orientan hacia fuentes de l
 Requiere Python 3.12 y [uv](https://docs.astral.sh/uv/).
 
 ```bash
-uv sync --all-extras
+uv sync --dev
 cp .env.example .env
-uv run uvicorn app.main:app --reload --port 8080 --env-file .env
+uv run uvicorn app.main:app --reload --port 8080 --env-file .env --no-access-log
 ```
 
 Abre <http://localhost:8080>. El chat funciona con las fuentes incluidas; el tablero requiere el valor de `ADMIN_TOKEN`. Las credenciales se configuran localmente y no se suben al repositorio.
