@@ -2,6 +2,10 @@
 
 **El campus, a un mensaje.** Asistente virtual para consultar información de la Universidad Nacional de Colombia por WhatsApp, con un tablero de uso y fuentes institucionales citadas.
 
+**[Abrir el piloto web en Google Cloud](https://nexo-unal-bum7ftz6gq-uc.a.run.app)** · [Repositorio](https://github.com/cristopardo/nexo-unal)
+
+El piloto web está desplegado en Cloud Run con Firestore. La conexión de un número de WhatsApp y la generación con Vertex AI se activan por configuración; la versión publicada inicialmente responde a partir del catálogo curado.
+
 El piloto está pensado para Ciencias de la Computación de la Sede Bogotá. La meta es extender el catálogo a programas y sedes de toda la Universidad: trámites, matrícula, bienestar, bibliotecas y vida universitaria.
 
 WhatsApp reduce la fricción de acceso por su adopción cotidiana. Algunos planes móviles incluyen su uso sin descontar datos; las condiciones dependen del operador, el plan y el tipo de contenido.
