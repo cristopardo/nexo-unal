@@ -1,7 +1,14 @@
 mock_provider "google" {}
 
 variables {
-  project_id = "nexo-unal-validation"
+  # Isolate mock tests from the operator's ignored deployment variable files.
+  project_id               = "nexo-unal-validation"
+  container_image          = null
+  enable_vertex_ai         = false
+  enable_whatsapp          = false
+  whatsapp_phone_number_id = ""
+  admin_secret_version     = "1"
+  max_instances            = 2
 }
 
 run "bootstrap_does_not_expose_an_unconfigured_service" {
