@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Nexo UNAL: orientación universitaria con fuentes institucionales.">
+  <title>Nexo UNAL · El campus, a un mensaje</title>
+  <link rel="icon" href="/static/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/static/styles.css">
+  <script src="/static/app.js" defer></script>
+</head>
+<body>
+  <aside class="sidebar">
+    <a class="brand" href="/" aria-label="Nexo UNAL, inicio"><img src="/static/icon.svg" alt="" width="42" height="42"><span>nexo<span class="brand-un">UNAL</span></span></a>
+    <div class="sidebar-caption">CONECTA CON TU UNIVERSIDAD</div>
+    <nav aria-label="Navegación principal">
+      <button class="nav-item active" id="nav-chat" aria-pressed="true" data-view="chat"><span aria-hidden="true">↗</span> Asistente</button>
+      <button class="nav-item" id="nav-metrics" aria-pressed="false" data-view="metrics"><span aria-hidden="true">▥</span> Tablero de uso</button>
+      <a class="nav-item" href="https://github.com/cristopardo/nexo-unal" target="_blank" rel="noopener noreferrer"><span aria-hidden="true">⌘</span> Proyecto abierto <span class="external">↗</span></a>
+    </nav>
+    <div class="pilot"><span class="pilot-dot"></span> PILOTO BOGOTÁ<strong>Ciencias de la<br>Computación</strong><p>Un primer paso hacia toda la U.</p></div>
+    <div class="sidebar-footer">Una iniciativa estudiantil.<br><span>Conocimiento que conecta.</span></div>
+  </aside>
+
+  <main>
+    <header class="topbar"><span>UNIVERSIDAD NACIONAL DE COLOMBIA</span><span class="status"><span class="status-dot"></span> Desarrollo inicial · v0.1</span></header>
+    <section id="view-chat" aria-labelledby="chat-title">
+      <div class="hero">
+        <div class="eyebrow"><span>HOLA, COMUNIDAD UNAL</span><span class="pill">FUENTES INSTITUCIONALES</span></div>
+        <h1 id="chat-title">El campus,<br>a <em>un mensaje.</em></h1>
+        <p>Menos vueltas. Más respuestas. Encuentra orientación sobre tu carrera, trámites y bienestar universitario.</p>
+        <div class="topic-row"><span>01 / TRÁMITES</span><span>02 / BIENESTAR</span><span>03 / VIDA UNIVERSITARIA</span></div>
+        <div class="orbit" aria-hidden="true"><span class="orbit-center">n</span><span class="orbit-one">↗</span><span class="orbit-two">?</span><span class="orbit-three">✦</span></div>
+      </div>
+
+      <div class="chat-layout">
+        <section class="chat-card" aria-label="Conversación con Nexo">
+          <header class="chat-card-header"><span class="avatar">n</span><div><strong>Conversa con Nexo</strong><span>Orientación con enlaces para verificar</span></div><span class="beta">PILOTO</span></header>
+          <div id="conversation" class="conversation" role="log" aria-live="polite" aria-relevant="additions">
+            <article class="message assistant"><span class="message-label">NEXO</span><p>¡Hola! Soy Nexo. ¿Qué necesitas saber de la U? Puedo ayudarte a encontrar fuentes sobre matrícula, trámites, tu programa y bienestar.</p></article>
+          </div>
+          <div class="suggestions" aria-label="Preguntas sugeridas"><button data-question="¿Cómo solicito un certificado de estudios?">Solicitar un certificado ↗</button><button data-question="¿Qué apoyos de bienestar hay?">Apoyos de bienestar ↗</button><button data-question="¿Dónde consulto el plan de Ciencias de la Computación?">Mi plan de estudios ↗</button></div>
+          <form id="chat-form" class="chat-input"><label class="sr-only" for="question">Tu pregunta sobre la UNAL</label><textarea id="question" name="message" rows="1" minlength="2" maxlength="2000" placeholder="Escribe tu pregunta sobre la U…" required></textarea><button type="submit" id="send" aria-label="Enviar pregunta">↗</button></form>
+          <p class="input-note">Evita incluir datos personales. Verifica los detalles en los enlaces institucionales.</p>
+        </section>
+        <aside class="context-column">
+          <div class="context-card"><span class="small-label">TU PUNTO DE PARTIDA</span><h2>Información útil.<br>Fuentes a la vista.</h2><p>Las respuestas del piloto parten de un catálogo curado de páginas de la Universidad.</p><a href="https://ciencias.bogota.unal.edu.co/" target="_blank" rel="noopener noreferrer">Facultad de Ciencias <span>↗</span></a><a href="https://registro.bogota.unal.edu.co/" target="_blank" rel="noopener noreferrer">Registro y Matrícula <span>↗</span></a><a href="https://bienestar.bogota.unal.edu.co/" target="_blank" rel="noopener noreferrer">Bienestar universitario <span>↗</span></a></div>
+          <div class="whatsapp-card"><span class="small-label">PENSADO PARA WHATSAPP</span><h3>La U, donde ya estás.</h3><p>Un canal cotidiano, sin instalar otra app. La conexión del número de WhatsApp se habilitará durante el piloto.</p><span class="integration-label">INTEGRACIÓN EN DESARROLLO</span></div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="view-metrics" hidden aria-labelledby="metrics-title">
+      <div class="metrics-heading"><div class="eyebrow">OBSERVATORIO DEL PILOTO</div><h1 id="metrics-title">Cada consulta<br><em>nos orienta.</em></h1><p>Uso real del asistente, sin guardar conversaciones ni números de teléfono.</p></div>
+      <form id="metrics-form" class="metrics-login"><div><label for="admin-token">Acceso de administración</label><p>El token se mantiene solo en esta pestaña.</p></div><input id="admin-token" type="password" autocomplete="off" placeholder="Token de administración" required><button type="submit">Consultar métricas ↗</button></form>
+      <p id="metrics-status" class="metrics-status" role="status">Introduce el token para consultar las métricas del servicio.</p>
+      <div id="metrics-content" hidden>
+        <div class="kpi-grid"><article class="kpi"><span>CONSULTAS RECIBIDAS</span><strong id="total">0</strong><p>En los últimos 90 días</p></article><article class="kpi"><span>CON FUENTES ENCONTRADAS</span><strong id="grounded">0%</strong><p id="grounded-count">0 consultas con referencias</p></article><article class="kpi"><span>RESPUESTA PROMEDIO</span><strong id="latency">0 ms</strong><p>Tiempo del motor de respuesta</p></article></div>
+        <div class="analytics-grid"><article class="analytics-card"><h2>Lo que consulta la comunidad</h2><p>Distribución por tema</p><div id="categories"></div></article><article class="analytics-card"><h2>Canales de acceso</h2><p>Consultas web y WhatsApp</p><div id="channels"></div><div class="fallback-stat"><span>Sin fuente suficiente</span><strong id="fallback">0</strong></div></article></div>
+        <article class="analytics-card daily-card"><h2>Actividad diaria</h2><p>Fechas en UTC · solo días con actividad</p><div class="table-wrap"><table><thead><tr><th scope="col">Fecha</th><th scope="col">Consultas</th></tr></thead><tbody id="daily"></tbody></table></div></article>
+      </div>
+    </section>
+    <footer class="main-footer"><span>NEXO UNAL © 2026</span><span>Iniciativa independiente · No es un canal oficial de la Universidad</span></footer>
+  </main>
+</body>
+</html>
