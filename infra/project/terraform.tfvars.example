@@ -1,0 +1,3 @@
+project_id      = "nexo-unal-2026"
+billing_account = "XXXXXX-XXXXXX-XXXXXX"
+# Set organization_id or folder_id only when required by the billing account owner.

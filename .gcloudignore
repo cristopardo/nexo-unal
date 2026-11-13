@@ -1,0 +1,17 @@
+.gcloudignore
+.git
+.github
+.venv
+__pycache__
+.pytest_cache
+.ruff_cache
+.env
+.env.*
+!.env.example
+infra
+work
+outputs
+*.db
+*.db-*
+*.sqlite*
+tests
