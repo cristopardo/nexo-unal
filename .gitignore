@@ -9,6 +9,8 @@ __pycache__/
 *.db
 *.db-shm
 *.db-wal
+*.sqlite*
+data/
 .terraform/
 *.tfstate
 *.tfstate.*

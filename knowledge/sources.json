@@ -1,0 +1,128 @@
+[
+  {
+    "id": "computacion-plan",
+    "title": "Plan de estudios de Ciencias de la Computación",
+    "url": "https://ciencias.bogota.unal.edu.co/estudiar_en_la_facultad/pregrados/ciencias_de_la_computacion/plan_de_estudios/",
+    "category": "academico",
+    "keywords": ["ciencias de la computación", "computacion", "plan de estudios", "malla", "pensum", "créditos", "duración", "carrera"],
+    "content": "El pregrado en Ciencias de la Computación pertenece a la Facultad de Ciencias de la Sede Bogotá. La página del programa informa 139 créditos y una duración estimada de nueve semestres. Consulta allí el plan de estudios y sus documentos; para resolver qué requisitos aplican a tu historia académica, contacta a la coordinación del programa.",
+    "reviewed_at": "2026-11-13"
+  },
+  {
+    "id": "computacion-contacto",
+    "title": "Contacto de Ciencias de la Computación",
+    "url": "https://ciencias.bogota.unal.edu.co/estudiar_en_la_facultad/pregrados/ciencias_de_la_computacion/contacto/",
+    "category": "academico",
+    "keywords": ["contacto", "coordinación", "secretaría", "computación", "ciencomp", "correo", "teléfono", "oficina"],
+    "content": "El contacto publicado para Ciencias de la Computación es ciencomp_fc_bog@unal.edu.co y el conmutador (601) 316 5000, extensión 13238. La página sitúa la atención en el edificio 404, oficina 215. Revisa el horario vigente en el enlace antes de desplazarte.",
+    "reviewed_at": "2026-11-13"
+  },
+  {
+    "id": "certificados-ciencias",
+    "title": "Certificados y solicitudes de la Facultad de Ciencias",
+    "url": "https://ciencias.bogota.unal.edu.co/dependencias/secretaria-de-facultad/",
+    "category": "tramites",
+    "keywords": ["certificado", "certificados", "notas", "matrícula", "constancia", "grado", "diploma", "solicitudes", "secretaría de ciencias"],
+    "content": "La Secretaría de la Facultad de Ciencias ofrece información sobre certificaciones, grados y solicitudes estudiantiles. Para certificados de matrícula, notas u otros documentos, consulta los servicios y el canal vigente en su página. El correo de contacto publicado es secraca_fcbog@unal.edu.co.",
+    "reviewed_at": "2026-11-13"
+  },
+  {
+    "id": "registro-tramites",
+    "title": "Trámites de Registro para estudiantes de pregrado Bogotá",
+    "url": "https://registro.bogota.unal.edu.co/estudiantes/pregrado",
+    "category": "tramites",
+    "keywords": ["registro", "documento", "actualizar datos", "cédula", "ventanilla", "certificado electoral", "descuento", "pregrado"],
+    "content": "La División de Registro de Bogotá publica los canales para actualizar datos personales en el SIA, presentar el certificado electoral y consultar otros trámites de pregrado. Abre la sección correspondiente para verificar requisitos y fechas del periodo. Presenta documentos personales únicamente en los canales oficiales indicados por Registro.",
+    "reviewed_at": "2026-11-13"
+  },
+  {
+    "id": "sia-inscripcion",
+    "title": "Guía de inscripción y cancelación de asignaturas en el SIA",
+    "url": "https://dninfoa.unal.edu.co/docs/Infografia_inscripcion_asignaturas.pdf",
+    "category": "academico",
+    "keywords": ["sia", "inscribir", "inscripción", "asignaturas", "materias", "cancelar", "cancelación", "horario", "grupos", "portal académico"],
+    "content": "La guía de DINARA explica el acceso a Inscripción y cancelación desde el Portal de Servicios Académicos del SIA. Allí seleccionas tu plan activo, asignaturas y grupos, revisas el horario y validas la inscripción. Antes de hacer cambios, consulta el calendario académico de tu sede y periodo.",
+    "reviewed_at": "2026-11-13"
+  },
+  {
+    "id": "matricula-pagos",
+    "title": "Guía de pago de matrícula y derechos de grado",
+    "url": "https://dninfoa.unal.edu.co/docs/Pago_en_linea_infogra.pdf",
+    "category": "tramites",
+    "keywords": ["pago", "pagar", "recibo", "matrícula", "matricula", "financiera", "derechos de grado", "pse", "fraccionamiento"],
+    "content": "La guía oficial de DINARA ubica el pago de recibos en el Portal de Servicios Académicos, en Información financiera y Pago en línea. Debes seleccionar el plan de estudios y periodo del recibo. Consulta en el SIA tu valor y estado de pago, y verifica el vencimiento en el calendario correspondiente.",
+    "reviewed_at": "2026-11-13"
+  },
+  {
+    "id": "calendario-bogota",
+    "title": "Calendario académico de la Sede Bogotá",
+    "url": "https://bogota.unal.edu.co/la-sede/calendario-academico",
+    "category": "academico",
+    "keywords": ["calendario", "fechas", "plazo", "semestre", "clases", "inicio", "finalización", "reingreso", "reserva de cupo", "traslado", "homologación"],
+    "content": "El calendario académico de Bogotá reúne plazos para inscripción y cancelación de asignaturas, pagos, reingresos, traslados, reservas de cupo y otras actividades. Consulta la actividad y el periodo en el enlace oficial; las fechas pueden modificarse mediante decisiones de la Universidad. Este catálogo no mantiene una copia de los vencimientos.",
+    "reviewed_at": "2026-11-13"
+  },
+  {
+    "id": "apoyos-bienestar",
+    "title": "Apoyos socioeconómicos de Bienestar Bogotá",
+    "url": "https://bienestar.bogota.unal.edu.co/gestion.php",
+    "category": "bienestar",
+    "keywords": ["bienestar", "apoyo", "socioeconómico", "sostenimiento", "alimentación", "almuerzo", "comedor", "alojamiento", "residencia", "transporte", "subsidio"],
+    "content": "Gestión y Fomento Socioeconómico de Bienestar Bogotá informa sobre apoyo económico, alimentación, alojamiento y transporte. La postulación se realiza según las convocatorias y sus requisitos, con valoración y disponibilidad de cupos. Consulta la modalidad que necesitas y sus canales de atención; preguntar al asistente no constituye una postulación ni una asignación de apoyo.",
+    "reviewed_at": "2026-11-13"
+  },
+  {
+    "id": "convocatorias-bienestar",
+    "title": "Convocatorias de Bienestar de la Sede Bogotá",
+    "url": "https://bienestar.bogota.unal.edu.co/convocatorias.php",
+    "category": "bienestar",
+    "keywords": ["convocatoria", "convocatorias", "beca", "becas", "jóvenes", "jovenes", "postular", "inscribirme", "beneficiarios", "apoyos"],
+    "content": "Bienestar Bogotá publica convocatorias, documentos y resultados de sus programas. Para buscar apoyos o becas, revisa la población destinataria, periodo, requisitos y cierre de cada convocatoria. Una publicación visible puede corresponder a un proceso cerrado; verifica sus documentos antes de postularte.",
+    "reviewed_at": "2026-11-13"
+  },
+  {
+    "id": "salud-estudiantil",
+    "title": "Área de Salud y atención estudiantil Bogotá",
+    "url": "https://bienestar.bogota.unal.edu.co/salud.php",
+    "category": "bienestar",
+    "keywords": ["salud", "psicología", "psicologia", "cita", "citas", "sinsu", "case", "medicina", "odontología", "nutrición", "salud mental"],
+    "content": "El Área de Salud de Bienestar Bogotá informa sobre servicios estudiantiles, solicitud de citas mediante SINSU y atención en el CASE. Consulta en su página las instrucciones de acceso y disponibilidad del servicio que necesitas. El contacto publicado es areasalud_bog@unal.edu.co. Este asistente orienta hacia servicios y no realiza diagnósticos ni asigna citas.",
+    "reviewed_at": "2026-11-13"
+  },
+  {
+    "id": "acompanamiento-integral",
+    "title": "Acompañamiento Integral e inclusión Bogotá",
+    "url": "https://bienestar.bogota.unal.edu.co/acompanamiento.php",
+    "category": "bienestar",
+    "keywords": ["acompañamiento", "adaptación", "permanencia", "inclusión", "discapacidad", "convivencia", "inducción", "dificultades", "orientación"],
+    "content": "Acompañamiento Integral de Bienestar Bogotá ofrece programas para la vida universitaria, inclusión, adaptación y convivencia. Para solicitar orientación o conocer la ruta apropiada, consulta su página o escribe a aaintegral@unal.edu.co. Los casos personales se atienden con el equipo de la Universidad por sus canales oficiales.",
+    "reviewed_at": "2026-11-13"
+  },
+  {
+    "id": "bibliotecas",
+    "title": "Servicios de Bibliotecas UNAL en Bogotá",
+    "url": "https://bibliotecas.unal.edu.co/sede-bogota/servicios/servicios-en-la-sede",
+    "category": "bibliotecas",
+    "keywords": ["biblioteca", "bibliotecas", "libros", "préstamo", "renovar", "reservar", "bases de datos", "artículos", "tesis", "bibliotecario"],
+    "content": "Las bibliotecas de Bogotá ofrecen consulta, préstamo, renovación, reservas, acceso a recursos y asesoría de búsqueda. Su portafolio enlaza el chat con el bibliotecario y las instrucciones para entrega de tesis. Revisa allí las condiciones del servicio y tu cuenta de biblioteca para conocer préstamos o vencimientos personales.",
+    "reviewed_at": "2026-11-13"
+  },
+  {
+    "id": "cultura",
+    "title": "Talleres y actividades culturales de Bienestar Bogotá",
+    "url": "https://bienestar.bogota.unal.edu.co/cultura.php",
+    "category": "bienestar",
+    "keywords": ["cultura", "cultural", "taller", "talleres", "danza", "música", "teatro", "artísticos", "arte"],
+    "content": "El Área de Cultura de Bienestar Bogotá informa sobre talleres, grupos artísticos y actividades culturales. Consulta su oferta y convocatorias para conocer inscripciones, cupos y tarifas aplicables. El contacto publicado es culturabien_bog@unal.edu.co.",
+    "reviewed_at": "2026-11-13"
+  },
+  {
+    "id": "deportes",
+    "title": "Actividad física y deporte de Bienestar Bogotá",
+    "url": "https://bienestar.bogota.unal.edu.co/deportes.php",
+    "category": "bienestar",
+    "keywords": ["deporte", "deportes", "gimnasio", "ejercicio", "actividad física", "torneos", "cursos libres", "yoga", "escalada", "vitalízate"],
+    "content": "Bienestar Bogotá publica programas de actividad física, cursos libres, torneos y deporte de competencia. Consulta en el área la oferta vigente y la forma de acceso; los cupos, horarios y costos dependen de la actividad y la población. Para cursos y convocatorias, sigue las instrucciones de inscripción publicadas por la Universidad.",
+    "reviewed_at": "2026-11-13"
+  }
+]
